@@ -1,0 +1,87 @@
+:root{
+    --text-color: black;
+    --link-color: rgb(92, 207, 245);
+    --background-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+.left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.right a{
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+.right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.right a span{
+    margin-left: 5px;
+}
+
+@media(max-width: 600px){
+nav{
+    padding: 0 20px;
+}
+.right a{
+    font-size: 22px;
+}
+.right a :last-child{
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+}
+.right a span {
+    display: none;
+}
+}
+
+/* Bio-Section */
+
+.bio-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+}
+
+.profile{
+   max-width: 100;
+}
