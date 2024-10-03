@@ -72,6 +72,7 @@ body{
     width: 300px;
     height: 300px;
     object-fit: cover;
+    margin-right: 80px;
     display: flex;
     align-content: center;
    justify-content: center;
@@ -133,10 +134,6 @@ body{
     line-height: 1.6;
 }
 
-.text-btn {
-    margin-bottom: 20px; 
-}
-
 .btn {
     background-color: rgb(245, 157, 63); 
     color: white; 
@@ -145,6 +142,8 @@ body{
     border-radius: 5px; 
     cursor: pointer; 
     transition: background-color 0.3s; 
+    right: 20px;
+    bottom: 20px;
 }
 
 .btn:hover {
@@ -153,8 +152,18 @@ body{
 
 .social-icons {
     display: flex;
+    /* justify-content: center; */
     align-items: center;
     gap: 15px; 
+
+}
+
+.social-icons a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
 }
 
 .icon {
@@ -217,7 +226,7 @@ margin-bottom: 20px;
 }
 
 .about-info p{
-    text-align: center;
+  
     font-size: 15px;
     color: #777;
 }
@@ -229,7 +238,7 @@ margin-bottom: 20px;
     background-color: rgb(245, 157, 63);
     color: white;
     margin-top: 10px;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 }
 
 .skills-header{
@@ -264,6 +273,47 @@ margin-bottom: 20px;
 .skill-set html{
     /* background-color: rgb(73, 138, 73); */
 }
+
+/* Contact Me */
+
+.contact{
+    /* max-width: 800px; */
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button{
+    background-color: rgb(245, 157, 63);
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.contact button:hover {
+    background-color:  #f48240;
+}
+
 
 
 
