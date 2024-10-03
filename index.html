@@ -9,67 +9,206 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!--Navbar-->
-    <nav>
-        <div class="left">
-            <a href="/">Zahra Karimi</a>
+    <div class="container">
+    <!--Header-->
+    <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Zahra Karimi<p>
         </div>
-        <div class="right">
-            <a href="http://github.com" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                <span>Github</span>
-            </a>
-            <a href="http://linkedin.com" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>Linkedin</span>
-            </a>
-            <a href="mailto:zahra@gmail.com" target="_blank">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-            </a>
-        </div>
-    </nav>
-    <main>
-    <!-- Section 1 : Bio -->
-        <section class="bio-section">
-            
-            <div class="text">
-                <h2>Hello, I`m Zahra 👋</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maiores cumque sapiente beatae deserunt facere dolorem consequuntur numquam laborum. Voluptas facere ratione id dicta maiores in ipsum, recusandae expedita similique.</p>
-                <div class="links">
-                    <a href="skills">
-                        <i class="fa-solid fa-code"></i>
-                        <span>skills</span>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav-menu-list">
+                <li class="nav-list">
+                    <a href="#home" target="_blank" class="nav-link">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
                     </a>
-                    <a href="about">
-                        <i class="fa-solid fa-pen"></i>
+                </li>
+                <li class="nav-list">
+                    <a href="about.html" target="_blank" class="nav-link">
+                        <i class="fa-solid fa-user"></i>
                         <span>About</span>
                     </a>
-                    <a href="contact">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>Contact</span>
+                </li>
+                <li class="nav-list">
+                    <a href="projects.html" target="_blank" class="nav-link">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>Skills</span>
                     </a>
+                </li>
+                <li class="nav-list">
+                    <a href="projects.html" target="_blank" class="nav-link">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-list">
+                    <a href="resume.html" target="_blank" class="nav-link">
+                    <i class="fa-solid fa-file"></i>
+                    <span>Resume</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="wrapper">
+    <!-- Section 1 : Bio -->
+        <section class="bio-section" id="home">
+
+            <div class="text">
+                <h2>Hi There! 👋</h2>
+                <div class="bio-name">
+                    <p>I`m <span class="typedText">Full-Stack Developer</span></p>
+                </div>
+                <div class="text-info">
+                    <p> A passionate web developer with a degree in software engineering from Kabul University. My journey in computer science has empowered me to tackle diverse and dynamic web projects, turning innovative ideas into functional and engaging digital experiences.
+                    </p>
+                </div>
+                <div class="text-btn">
+                    <button class="btn">Download CV <i class="fa-solid fa-file"></i></button>
+                </div>
+                <div class="social-icons">
+                    <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="icon"><i class="fa-brands fa-square-instagram"></i></div>
                 </div>
             </div>
 
-            <div class="profile">
-                <img src="images/profile.jpg" alt="Zahra Karimi">
+            <div>
+                <img src="images/profile.jpg" alt="Zahra Karimi" class="profile-image">
             </div>
-            
-
         </section>
-    <!-- Section 2 : Skills -->
-        <section id="skills">
 
+    <!-- Section 2 : About -->
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>About Me</h1>
+            </div>
+            <div class="about-container">
+                    <div class="about-info">
+                        <h3>My introduction</h3>
+                        <p>I`m well-versed in Html, Css, Javascript and other cutting edge frameworks and libraries, which allows me to implement interactive features.Additionally, My enthusiasm for programming drives me to continuously improve and expand my skill set, enabling me to deliver high-quality solutions that meet user needs.  </p>
+                        <p>
+                            I take pride in being a quick learner and a self-starter, always eager to embrace new challenges and technologies. My enthusiasm for programming drives me to continuously improve and expand my skill set, enabling me to deliver high-quality solutions that meet user needs
+                        </p>
+                        <div class="about-btn">
+                            <button class="btn">
+                                Download CV <i class="fa-solid fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
         </section>
-    <!-- Section 3 : About -->
-        <section id="about">
 
+    <!-- Section 3 : Skills -->
+    <section class="section" id="Projects">
+        <div class="top-header">
+            <h1>Skills</h1>
+        </div>
+        <div class="skill-container">
+            <div>
+                <div class="skill-set">
+                    <p>HTML</p>
+                    <div class="skill html">
+                        90%
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p>Css</p>
+                    <div class="skill html">
+                        90%
+                    </div>
+                </div> 
+                <div class="skill-set">
+                    <p>Javascript</p>
+                    <div class="skill html">
+                        70%
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p>JQuery</p>
+                    <div class="skill html">
+                        70%
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="skill-set">
+                    <p>React</p>
+                    <div class="skill html">
+                        40%
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p>Vue</p>
+                    <div class="skill html">
+                        40%
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p>MySQl</p>
+                    <div class="skill html">
+                        90%
+                    </div>
+                </div>
+                <div class="skill-set">
+                    <p>MongoDB</p>
+                    <div class="skill html">
+                        80%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 : projects -->
+        <section class="section" id="Projects">
+            <div class="top-header">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-container">
+                <div class="project-box">
+
+                </div>
+            </div>
         </section>
-    <!-- Section 4 : Contact -->
+ 
+    <!-- Section 5 : Contact -->
         <section id="contact">
 
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-copywWrite">
+            <h4>Designed and Developed by Zahra Karimi</h4>
+        </div>
+        <div class="footer-copywWrite">
+            <h4>Copyright © 2024</h4>
+        </div>
+        <div class="footer-links">
+            <a href="http://github.com" target="_blank">
+                <i class="fa-brands fa-github"></i> 
+            </a>
+            <a href="http://linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:zahra@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+</div>
+
+    <!-- Main js-->
+     <script src="main.js"></script>
+    <!-- Scroll Reveal Js Link-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Typing Js Link-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
 </body>
 </html>
