@@ -134,13 +134,19 @@ body{
     line-height: 1.6;
 }
 
+.text-btn{
+    display: flex;
+    justify-content: end;
+}
+
 .btn {
     background-color: rgb(245, 157, 63); 
     color: white; 
+    align-items: flex-end;
     padding: 10px 20px; 
     border: none;
     border-radius: 5px; 
-    cursor: pointer; 
+    cursor: pointer;
     transition: background-color 0.3s; 
     right: 20px;
     bottom: 20px;
