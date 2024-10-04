@@ -20,6 +20,7 @@ body{
     align-items: center;
     padding: 10px 50px;
     background-color: rgb(245, 157, 63);
+    /* background-color:   #282c34; */
     position: sticky; 
     top: 0;
     z-index: 1000;
@@ -126,6 +127,7 @@ body{
 }
 .typedText{
     color: rgb(245, 157, 63);
+
 }
 
 .text-info {
@@ -276,8 +278,17 @@ margin-bottom: 20px;
     position: relative; 
 }
 
-.skill-set html{
-    /* background-color: rgb(73, 138, 73); */
+.skill-bar {
+    height: 100%;
+    border-radius: 5px; 
+}
+
+.percentage {
+    position: absolute;
+    right: 0; 
+    top:-20px;
+    margin-left: 10px; 
+    font-weight: bold; 
 }
 
 /* Contact Me */
@@ -321,11 +332,6 @@ margin-bottom: 20px;
 }
 
 
-
-
-
-
-
 /* Footer */
 
 footer {
@@ -333,6 +339,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(245, 157, 63);
+
     color: white;
     padding: 20px 50px;
     margin-top: auto;
