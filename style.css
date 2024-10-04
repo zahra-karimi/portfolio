@@ -19,8 +19,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    background-color: rgb(245, 157, 63);
-    /* background-color:   #282c34; */
+    background-color:  #8376d5;
     position: sticky; 
     top: 0;
     z-index: 1000;
@@ -126,8 +125,7 @@ body{
 
 }
 .typedText{
-    color: rgb(245, 157, 63);
-
+    color: #8376d5;
 }
 
 .text-info {
@@ -136,31 +134,9 @@ body{
     line-height: 1.6;
 }
 
-.text-btn{
-    display: flex;
-    justify-content: end;
-}
-
-.btn {
-    background-color: rgb(245, 157, 63); 
-    color: white; 
-    align-items: flex-end;
-    padding: 10px 20px; 
-    border: none;
-    border-radius: 5px; 
-    cursor: pointer;
-    transition: background-color 0.3s; 
-    right: 20px;
-    bottom: 20px;
-}
-
-.btn:hover {
-    background-color: rgb(211, 120, 22); 
-}
 
 .social-icons {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 15px; 
 
@@ -187,8 +163,8 @@ body{
 }
 
 .icon:hover {
-    background-color: rgb(245, 157, 63); 
-    color: white;
+    background-color: #958bdb;
+    color: black;
 }
 
 /* About Me */
@@ -206,10 +182,11 @@ body{
 text-align: center;
 margin-bottom: 20px;
 }
+
 .top-header h1{
     font-size: 30px;
     font-weight: bold;
-    color: rgb(245, 157, 63);
+    color: #282c34;
 }
 
 .about-container{
@@ -234,7 +211,6 @@ margin-bottom: 20px;
 }
 
 .about-info p{
-  
     font-size: 15px;
     color: #777;
 }
@@ -243,10 +219,10 @@ margin-bottom: 20px;
     position: absolute;
     right: 20px;
     bottom: 20px;
-    background-color: rgb(245, 157, 63);
+    background-color: #8376d5;
     color: white;
     margin-top: 10px;
-    /* border-radius: 30px; */
+    border-radius: 30px;
 }
 
 .skills-header{
@@ -316,19 +292,20 @@ margin-bottom: 20px;
 }
 
 .contact button{
-    background-color: rgb(245, 157, 63);
+    background-color: #8376d5;;
     color: white;
     margin-top: 10px;
     border-radius: 30px;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     
 }
 
 .contact button:hover {
-    background-color:  #f48240;
+    background-color: #7366c7;
+
 }
 
 
@@ -338,8 +315,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(245, 157, 63);
-
+    background-color: #8376d5;
     color: white;
     padding: 20px 50px;
     margin-top: auto;
@@ -365,5 +341,27 @@ footer {
 
 .footer-links a i {
     margin-right: 5px;
+}
+
+.footer-btn{
+    display: flex;
+    justify-content: end;
+}
+
+.btn {
+    background-color:  #8376d5; 
+    color: white; 
+    align-items: flex-end;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    right: 20px;
+    bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #7366c7;
 }
 
