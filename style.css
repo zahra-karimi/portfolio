@@ -98,6 +98,9 @@ body{
 
 
 /* Bio-Section */
+html{
+    scroll-behavior: smooth;
+}
 
 .bio-section {
     display: flex;
@@ -266,10 +269,54 @@ margin: 30px;
 
 /* Contact Me */
 
+.contact-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+.contact-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    width: 40%;
+    color: #282c34;
+    transition: background-color .4s ease;
+    border-radius: 20px;
+    box-shadow: 2px 5px 8px lightgray;
+    overflow: hidden;
+}
+
+.contact-info:hover{
+    background-color: #8376d5;
+    color: white;
+
+}
+.contact-info h2{
+    margin-bottom: 20px;
+}
+
+.contact-info p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block: 5px;
+}
+
+.contact-info p i{
+    color:  #8376d5;
+    font-size: 18px;
+}
+
 .contact{
     /* max-width: 800px; */
-    width: 80%;
-    margin: 20px auto;
+    width: 40%;
+    margin: 10px;
     padding: 20px;
     background-color: white;
     box-shadow: 2px 5px 8px lightgray;
@@ -315,14 +362,22 @@ margin: 30px;
 
 .project-box{
     background-color: white;
-    padding-block: 30px 50px;
-    padding-inline: 20px;
+    /* padding-block: 30px 50px;
+    padding-inline: 20px; */
+    padding: 20px;
     box-shadow: 2px 5px 8px lightgray;
     border-radius: 20px;
     width: 40%;
     margin-bottom: 20px;
 }
 
+.project-photo{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px; 
+}
 
 /* Footer */
 
