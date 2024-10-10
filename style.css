@@ -10,7 +10,6 @@ html{
 
 body{
     font-family: 'poppins', sans-serif;
-    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
 }
 
 /* Header Styles */
@@ -62,6 +61,7 @@ body{
 
 .nav-link:hover {
     color: black;
+    font-weight: bold;
 }
 
 .profile-image {
@@ -72,7 +72,7 @@ body{
     margin-right: 80px;
     display: flex;
     align-content: center;
-   justify-content: center;
+    justify-content: center;
 }
 
 
@@ -164,20 +164,14 @@ html{
 
 .icon:hover {
     background-color: #958bdb;
-    color: black;
+}
+
+.icon:hover i {
+    color: white;
 }
 
 /* About Me */
-.row{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 50px;
-}
-.col{
-    display: flex;
-    width: 50%;
-}
+
 .top-header{
 text-align: center;
 margin: 30px;
@@ -193,36 +187,34 @@ margin: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
+
 .about-info{
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
     flex-direction: column;
-    background-color:  #c6bfef;
+    background-color: #f0f0f0;
     padding-block: 40px 60px;
     padding-inline: 30px;
-    box-shadow: 2px 5px 8px lightgray;
-    border-radius: 20px;
-    width: 80%;
+    box-shadow: 0 -8px 8px #f0f0f0, 0 8px 8px #f0f0f0;
+    width: 100%;
     margin-bottom: 20px;
 }
 
 .about-info p{
-    font-size: 15px;
-    color: #474646;
+    font-size: 17px;
+    color: #282c34;
+    line-height: 2.5;  
 }
 
 .about-btn button{
     position: absolute;
-    right: 20px;
-    bottom: 20px;
-    background-color: #8376d5;
-    color: white;
-    margin-top: 10px;
+    background-color:  #8376d5;
+    color:  white;
     border-radius: 30px;
+    font-size: 17px;
 }
 
 .skills-header{
@@ -267,6 +259,110 @@ margin: 30px;
     font-weight: bold; 
 }
 
+/* Education and Experience */
+.timeline{
+    padding: 30px 10px;
+    position: relative;
+}
+
+.timeline::before{
+    content: " ";
+    top:0;
+    bottom: 0;
+    position: absolute;
+    width: 3px;
+    background-color: #333;
+    left: 50%;
+    margin-left: -2.5;
+}
+
+.timeline >li{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline >li:before, 
+.timeline> li:after{
+    content: " ";
+    display: table;
+}
+
+.timeline >li:after{
+    clear: both;
+}
+
+.timeline li .timeline-badge{
+    color:   #7366c7;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+.timeline-panel-container{
+    width: 40%;
+    float: left;
+}
+.timeline-panel-container-inverted{
+    width: 40%;
+    float: right;
+}
+
+
+.timeline-panel{
+    width: 90%;
+    float: right;
+    /* margin-right: 40px; */
+    border: 1px solid #d4d4d4;
+    border-radius: 7px;
+    padding: 20px 25px;
+    position: relative;
+    box-shadow: 0 1px 6px  rgba(0,0,0,0.175);
+    background-color: #fff;
+}
+
+.timeline-panel-container-inverted .timeline-panel{
+    float: left;
+    /* margin-left: 40px; */
+}
+
+.timeline-panel::after{
+    position: absolute;
+    top:27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline-panel-container-inverted .timeline-panel::after{
+    border-left-width: 0px;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.timeline-heading h3{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.timeline-heading h4{
+    color:  #7366c7;
+}
+
+.text-muted{
+    color: #8e8a8a;
+}
+
 /* Contact Me */
 
 .contact-container{
@@ -298,6 +394,7 @@ margin: 30px;
 }
 .contact-info h2{
     margin-bottom: 20px;
+    color: #8376d5;
 }
 
 .contact-info p{
@@ -310,6 +407,16 @@ margin: 30px;
 .contact-info p i{
     color:  #8376d5;
     font-size: 18px;
+}
+
+.contact-info:hover i{
+    color: white;
+
+}
+
+.contact-info:hover h2{
+    color: white;
+
 }
 
 .contact{
@@ -348,7 +455,6 @@ margin: 30px;
 
 .contact button:hover {
     background-color: #7366c7;
-
 }
 
 /* projects */
@@ -365,6 +471,11 @@ margin: 30px;
     box-shadow: 2px 5px 8px lightgray;
     border-radius: 20px;
     overflow: hidden;
+}
+
+.project-box:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
 }
 
 .project-photo{
@@ -446,9 +557,6 @@ footer {
     bottom: 20px;
 }
 
-.btn:hover {
-    background-color: #7366c7;
-}
 
 /* page up */
 
