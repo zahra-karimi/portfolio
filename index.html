@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="top"></div>
-    <div class="container">
+    <div>
     <!--Header-->
     <nav id="header">
         <div class="nav-logo">
@@ -52,13 +52,10 @@
         </div>
     </nav>
 
-    <!-- Main -->
-    <main class="wrapper">
     <!-- Section 1 : Bio -->
         <section class="bio-section" id="home">
-
-            <div class="text">
-                <h2>Hi There! 👋</h2>
+            <div>
+                <h2 class="text">Hi There! 👋</h2>
                 <div class="bio-name">
                     <p>I`m <span class="typedText">Full-Stack Developer</span></p>
                 </div>
@@ -91,24 +88,29 @@
             </div>
 
             <div>
-                <img src="images/image.jpg" alt="Zahra Karimi" class="profile-image">
+                <img src="images/img.jpg" alt="Zahra Karimi" class="profile-image">
             </div>
         </section>
 
     <!-- Section 2 : About -->
-        <section class="section" id="about">
+        <section id="about">
             <div class="top-header">
                 <h1>About Me</h1>
             </div>
             <div class="about-container">
                     <div class="about-info">
-                        <p>I`m well-versed in Html, Css, Javascript and other cutting edge frameworks and libraries, which allows me to implement interactive features.Additionally, My enthusiasm for programming drives me to continuously improve and expand my skill set, enabling me to deliver high-quality solutions that meet user needs.  <br>
-                            I take pride in being a quick learner and a self-starter, always eager to embrace new challenges and technologies. My enthusiasm for programming drives me to continuously improve and expand my skill set, enabling me to deliver high-quality solutions that meet user needs
-                        </p>
-                        <div class="about-btn">
-                            <button class="btn">
-                                Download CV <i class="fa-solid fa-download"></i>
-                            </button>
+                        <div class="about">
+                            <p>I`m well-versed in Html, Css, Javascript and other cutting edge frameworks and libraries, which allows me to implement interactive features. Additionally, My enthusiasm for programming drives me to continuously improve and expand my skill set, enabling me to deliver high-quality solutions that meet user needs.  <br>
+                                I take pride in being a quick learner and a self-starter, always eager to embrace new challenges and technologies. My enthusiasm for programming drives me to continuously improve and expand my skill set, enabling me to deliver high-quality solutions that meet user needs.
+                            </p>
+                            <div class="about-btn">
+                                <button class="btn">
+                                    Download CV <i class="fa-solid fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <img src="images/image.jpg" alt="Zahra Karimi" class="profile-image">
                         </div>
                     </div>
                 </div>
@@ -116,15 +118,39 @@
 
     <!-- Section 2 : Education and Experience -->
 
-    <section class="section" id="experiences">
+    <section id="experiences">
+        <div class="exp-container">
         <div class="top-header">
             <h1>Education and Experience</h1>
         </div> 
-        <!-- <div class="exp-container"> -->
             <ul class="timeline">
+
                 <li>
                     <div class="timeline-badge"> <i class="fa-solid fa-briefcase"></i></div>
                     <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>InceptionU</h3>
+                                <h4>Full Stack Development</h4>
+                                <p class="text-muted"><i class="fa-solid fa-clock"></i> Sep 2024 - Feb 2025
+                                </p>
+    
+                            </div>
+                            <div class="timeline-body">
+                                <p>
+                                    This training program helped me to enhance my relevant skills in Full stack.
+                                </p>
+                                <p>Inception U, Calgary, Canada
+                                </p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge"> <i class="fa-solid fa-briefcase"></i></div>
+                    <div class="timeline-panel-container-inverted">
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h3>Kabul University</h3>
@@ -142,7 +168,7 @@
     
                 <li>
                     <div class="timeline-badge"> <i class="fa-solid fa-briefcase"></i></div>
-                    <div class="timeline-panel-container-inverted">
+                    <div class="timeline-panel-container">
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h3>Taksa Market </h3>
@@ -165,7 +191,7 @@
     
                 <li>
                     <div class="timeline-badge"> <i class="fa-solid fa-briefcase"></i></div>
-                    <div class="timeline-panel-container">
+                    <div class="timeline-panel-container-inverted">
     
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -185,14 +211,13 @@
                 </li>
     
             </ul>
-                
-        <!-- </div>   -->
+        </div>
     </section>
 
 
     <!-- Section 3 : Skills -->
-    <section class="section" id="skills">
-        <div class="top-header">
+    <section id="skills">
+        <div class="skill-header">
             <h1>Skills</h1>
         </div>
         <div class="skill-container">
@@ -258,10 +283,10 @@
                 </div>
             </div>
         </div>
-    </section>
+     </section>
 
-    <!-- Section 4 : projects -->
-        <section class="section" id="projects">
+     <!-- Section 4 : projects -->
+        <section id="projects">
             <div class="top-header">
                 <h1>Projects</h1>
             </div>
@@ -302,7 +327,7 @@
         </section>
 
     <!-- Section 5 : Contact -->
-    <section class="section" id="contact">
+    <section id="contact">
         <div class="top-header">
             <h1>Contact Me</h1>
         </div>
@@ -337,7 +362,7 @@
     <div  class="circle-button" id="topButton">
         <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
-    </main>
+
 
     <!-- Footer -->
     <footer>
