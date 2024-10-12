@@ -239,12 +239,14 @@ body{
     background-color: #333;
     left: 50%;
     /* margin-left: -2.5; */
+    
 }
 
 .timeline >li{
     margin-bottom: 20px;
     position: relative;
     list-style-type: none;
+
 }
 
 .timeline >li:before, 
@@ -284,18 +286,17 @@ body{
 .timeline-panel{
     width: 90%;
     float: right;
-    /* margin-right: 40px; */
     border: 1px solid #d4d4d4;
     border-radius: 7px;
     padding: 20px 25px;
     position: relative;
     box-shadow: 0 1px 6px  rgba(0,0,0,0.175);
     background-color: #fff;
+    border-bottom: 2px solid #8376d5;
 }
 
 .timeline-panel-container-inverted .timeline-panel{
     float: left;
-    /* margin-left: 40px; */
 }
 
 .timeline-panel::after{
@@ -388,13 +389,14 @@ body{
     background-color: white;
     margin: 20px;
     width: 325px;
-    box-shadow: 2px 5px 8px lightgray;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
 }
 
 .project-box:hover{
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 
+    0px 8px 14px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
 }
 
