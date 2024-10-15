@@ -408,9 +408,16 @@ body{
     transform: scale(1.05);
 }
 
+.container-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-photo{
-    width: 100%;
-    border-radius: 8px;
+    width: auto;
+    height: 200px;
+    object-fit: cover;
     padding: 20px;
     padding-bottom: 0px;
 }
