@@ -73,6 +73,13 @@ body{
     justify-content: center;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -80,18 +87,25 @@ body{
         display: flex;
         padding: 10px; 
     }
-
-    .nav-menu {
-        margin-top: 10px; 
+    .nav-menu-list {
+        flex-direction: column; 
+        display: none;         
+        width: 100%;           
+        position: absolute;     
+        background-color:  #8376d5;
+        top: 60px;              
+        left: 0;
     }
 
-    .nav-list {
-        margin-left: 10px; 
+    .nav-menu-list.show {
+        display: flex; 
     }
 
-    .nav-list span {
-        display: none;
+    .menu-toggle {
+        display: block; 
+        color: white;
     }
+
 }
 
 
@@ -170,8 +184,6 @@ body{
     text-align: center;
     margin: 50px;
 }
-
-
 
 .top-header h1{
     font-size: 30px;
@@ -278,11 +290,13 @@ body{
 .timeline-panel-container{
     width: 46%;
     float: left;
+    cursor: pointer;
 }
 
 .timeline-panel-container-inverted{
     width: 46%;
     float: right;
+    cursor: pointer;
 }
 
 .timeline-panel{
