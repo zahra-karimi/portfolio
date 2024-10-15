@@ -171,6 +171,8 @@ body{
     margin: 50px;
 }
 
+
+
 .top-header h1{
     font-size: 30px;
     font-weight: bold;
@@ -292,7 +294,7 @@ body{
     position: relative;
     box-shadow: 0 1px 6px  rgba(0,0,0,0.175);
     background-color: #fff;
-    border-bottom: 2px solid #8376d5;
+    border-bottom: 3px solid #8376d5;
 }
 
 .timeline-panel-container-inverted .timeline-panel{
@@ -379,6 +381,12 @@ body{
 
 /* projects */
 
+.project-header{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
 .project-container{
     display: flex;
     flex-wrap: wrap;
@@ -402,8 +410,9 @@ body{
 
 .project-photo{
     width: 100%;
-    height: auto;
     border-radius: 8px;
+    padding: 20px;
+    padding-bottom: 0px;
 }
 
 .project-content{
@@ -428,6 +437,12 @@ body{
 }
 
 /* Contact Me */
+
+.contact-header{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 .contact-container{
     display: flex;
