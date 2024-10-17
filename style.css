@@ -64,16 +64,6 @@ body{
     font-weight: bold;
 }
 
-.profile-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
 
 .menu-toggle {
     display: none;
@@ -108,6 +98,8 @@ body{
         color: white;
     }
 
+   
+
 }
 
 
@@ -116,11 +108,12 @@ body{
 .bio-section {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     padding: 0 50px;
     margin: 50px 0;
-    background-color: #ffffff;
 }
+
 
 .text{
     font-size: 32px;
@@ -180,6 +173,21 @@ body{
     color: white;
 }
 
+@media (min-width: 768px) {
+    .bio-section {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .bio-name{
+        font-size: 30px;
+    }
+    
+}
+
 /* About Me */
 
 .top-header{
@@ -193,20 +201,32 @@ body{
     color: #282c34;
 }
 
+.profile-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
 .about-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .about-info{
     position: relative;
     display: flex;
-    justify-content: space-between;
-    background-color: #fafafa;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #fafafa; 
     padding-block: 40px 60px;
     padding-inline: 30px;
-    border-radius: 15px;
+    border-radius: 15px; 
     box-shadow: 0 -8px 8px #fafafa, 0 8px 8px #fafafa;
     max-width: 90%;
 }
@@ -219,8 +239,8 @@ body{
 }
 
 .about{
-    max-width: 70%;
-}
+    max-width: 70%;   
+} 
 
 .about-btn button {
     position: absolute;
@@ -236,6 +256,18 @@ body{
     list-style-type: none;
     text-decoration: none;
     color: white;
+}
+
+@media (min-width: 768px) {
+    .about-info {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: flex-start; 
+    }
+
+    .about {
+        margin-right: 20px; 
+    }
 }
 
 /* Education and Experience */
@@ -356,6 +388,38 @@ body{
     color: #8e8a8a;
 }
 
+@media (max-width: 768px) {
+    .timeline-panel-container{
+  
+        width: 40%;
+        float: left;
+    }
+    .timeline-panel-container-inverted {
+        width: 40%;
+        float: right;
+    }
+
+    .timeline-panel {
+        width: 200px;
+      
+    }
+
+}
+
+@media (max-width: 480px) {
+    .timeline-heading h3 {
+        font-size: 10px;
+    }
+
+    .timeline-heading h4 {
+        font-size: 10px;
+    }
+
+    .timeline-panel {
+        padding: 15px 20px;
+    }
+}
+
 
 /* Skills */
 
@@ -372,7 +436,7 @@ body{
 }
 
 .skill-set {
-    width: 500px; 
+    width: 500px;
     margin: 15px;
     text-align: left; 
 }
@@ -403,6 +467,13 @@ body{
     font-weight: bold; 
 }
 
+@media (max-width: 600px) {
+    .skill-set {
+        width: 400px;
+    }
+
+}
+
 /* projects */
 
 .project-header{
@@ -427,8 +498,7 @@ body{
 }
 
 .project-box:hover{
-    box-shadow: 
-    0px 8px 14px rgba(0, 0, 0, 0.1);
+    box-shadow:  0px 8px 14px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
 }
 
@@ -487,9 +557,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 40%;
+    /* max-width: 800px; */
     padding: 20px;
     margin: 10px;
-    width: 40%;
     color: #282c34;
     transition: background-color .4s ease;
     border-radius: 20px;
@@ -530,8 +601,7 @@ body{
 }
 
 .contact{
-    /* max-width: 800px; */
-    width: 40%;
+    max-width: 800px;
     margin: 10px;
     padding: 20px;
     background-color: white;
@@ -565,6 +635,17 @@ body{
 
 .contact button:hover {
     background-color: #7366c7;
+}
+
+@media (max-width: 800px) {
+    .contact-container {
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+    } 
+    .contact-info{
+        max-width: 800px;
+    }
 }
 
 
