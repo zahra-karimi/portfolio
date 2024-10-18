@@ -270,6 +270,20 @@ body{
     }
 }
 
+@media (max-width: 768px) {
+    .about-info {
+       padding-inline: 0px;
+      
+    }
+
+    .profile-image{
+        margin-top: 15px;
+        width: 110%;
+       
+    }
+
+}
+
 /* Education and Experience */
 
 .exp-container{
@@ -558,7 +572,6 @@ body{
     justify-content: center;
     align-items: center;
     width: 40%;
-    /* max-width: 800px; */
     padding: 20px;
     margin: 10px;
     color: #282c34;
@@ -567,6 +580,7 @@ body{
     box-shadow: 2px 5px 8px lightgray;
     overflow: hidden;
 }
+
 
 .contact-info:hover{
     background-color: #8376d5;
@@ -637,14 +651,27 @@ body{
     background-color: #7366c7;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .contact-container {
         flex-direction: column; 
         justify-content: center; 
         align-items: center; 
     } 
-    .contact-info{
-        max-width: 800px;
+    
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        width: 80%; 
+        padding: 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info {
+        width: 90%; 
+        padding: 10px; 
+        margin: 5px; 
     }
 }
 
