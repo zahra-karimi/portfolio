@@ -1,17 +1,65 @@
-"use client";
+import "../styles/global.css";
+// import { Jura } from "next/font/google";
 
-import { ThemeProvider } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import theme from "../theme/theme";
+
+
+// const jura = Jura({
+//   subsets: ["latin"],
+//   variable: "--font-jura",
+//   display: "swap",
+// });
+
+// export const metadata = {
+//   title: {
+//     default: "Naiara Costa - Full Stack Dev Portfolio",
+//     template: "%'s | Naiara Costa"
+//   },
+//   description: "Full stack developer with expertise in front-end. Explore my projects and get in touch for collaboration opportunities.",
+//   keywords: [
+//     "full stack developer",
+//     "portfolio",
+//     "Naiara Costa",
+//     "Calgary",
+//     "React", "Next.js", "JavaScript", "TypeScript", "Node.js",
+//   ],
+//   authors: [{ name: 'Naiara Costa' }],
+//   creator: "Naiara Costa",
+
+//   openGraph: {
+//     type: "website",
+//     locale: "en_US",
+//     url: "https://naiaracosta.com",
+//     title: "Naiara Costa - Full Stack Developer Portfolio",
+//     description: "Full stack developer with expertise in front-end. Explore my projects and get in touch.",
+//     siteName: "Naiara Costa Portfolio",
+//     images: [
+//       {
+//         url: "./og-portfolio.png",
+//         width: 1200,
+//         height: 630,
+//         alt: "Naiara Costa - Full Stack Developer Portfolio",
+//         type: "image/png",
+//       },
+//     ],
+//   },
+// };
+
+// export const viewport = {
+//   width: 'device-width',
+//   initialScale: 1,
+//   maximumScale: 5,
+//   userScalable: true,
+// };
+
+
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
+      <body className="antialiased font-sans">
+     
           {children}
-        </ThemeProvider>
+    
       </body>
     </html>
   );
