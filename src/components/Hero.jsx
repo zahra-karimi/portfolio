@@ -1,30 +1,40 @@
 "use client";
 
-import { Box, Container, Typography, Button } from "@mui/material";
-
 export default function Hero() {
   return (
-    <Box
-      sx={{
-        minHeight: "80vh",
-        display: "flex",
-        alignItems: "center",
-        textAlign: "center",
-      }}
-    >
-      <Container>
-        <Typography variant="h3" fontWeight="bold" gutterBottom>
-          Hi,  Zahra Karimi
-        </Typography>
+    <section className="bg-white py-20 flex items-center">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+            Zahra Karimi
+          </h1>
 
-        <Typography variant="h6" color="text.secondary" mb={3}>
-          Full Stack Developer | React | Next.js | Node.js
-        </Typography>
+          <h2 className="text-2xl font-semibold text-purple-400 mb-4">
+            Full Stack Developer
+          </h2>
 
-        <Button variant="contained" size="large">
-          View My Projects
-        </Button>
-      </Container>
-    </Box>
+          <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-lg">
+            I build modern, responsive web applications using technologies like
+            React, Next.js, and Node.js. I enjoy solving problems and creating
+            clean user experiences.
+          </p>
+
+          <a
+            href="#projects"
+            className="inline-block bg-purple-400 text-white px-8 py-3 rounded-lg font-medium hover:bg-purple-500 transition duration-300"
+          >
+            View Projects
+          </a>
+        </div>
+
+        <div className="flex justify-center md:justify-end">
+          <img
+            src=""
+            alt="Zahra Karimi"
+            className="w-[380px] h-auto shadow-xl rounded-lg"
+          />
+        </div>
+      </div>
+    </section>
   );
 }

@@ -64,8 +64,8 @@ export default function Header() {
             <a
               key={item.id}
               href={`#${item.id}`}
-              className={`hover:text-indigo-600 ${
-                activeSection === item.id ? "text-indigo-600" : "text-gray-900"
+              className={`hover:text-purple-400 ${
+                activeSection === item.id ? "text-purple-400" : "text-gray-900"
               }`}
             >
               {item.label}
@@ -109,8 +109,8 @@ export default function Header() {
             <a
               key={item.id}
               href={`#${item.id}`}
-              className={`block hover:text-indigo-600 ${
-                activeSection === item.id ? "text-indigo-600" : "text-gray-900"
+              className={`block hover:text-purple-400 ${
+                activeSection === item.id ? "text-purple-400" : "text-gray-900"
               }`}
               onClick={() => setMobileOpen(false)}
             >
