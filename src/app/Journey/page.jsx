@@ -61,7 +61,7 @@ export default function Journey() {
   const visibleItems = showAll ? journey : journey.slice(0, 3);
 
   return (
-    <section id="journey" className="bg-gray-100 py-16">
+    <section id="journey" className="bg-gray-50 py-16">
       <div className="max-w-5xl mx-auto px-6">
 
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
