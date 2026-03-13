@@ -6,7 +6,7 @@ import { Code, Server, Wrench, Brain } from "lucide-react";
 export default function Skills() {
 
   const frontend = [
-    "HTML5","CSS3","JavaScript","React.js","Next.js","Vue.js","Nuxt.js",
+    "HTML5","CSS3","JavaScript","React.js","Next.js","Vue.js","Nuxt.js","WordPress",
     "Tailwind CSS","Material UI (MUI)","Bootstrap","Vuetify","DOM"
   ];
 
