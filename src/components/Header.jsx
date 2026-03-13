@@ -54,8 +54,8 @@ export default function Header() {
     >
       <nav className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         
-        <a href="#" className="text-2xl text-gray-900">
-          Zahra Karimi
+        <a href="#" className="text-2xl text-purple-400">
+          Z.K | Portfolio
         </a>
 
         {/* Desktop Menu */}
@@ -64,6 +64,7 @@ export default function Header() {
             <a
               key={item.id}
               href={`#${item.id}`}
+              onClick={() => setActiveSection(item.id)}
               className={`hover:text-purple-400 ${
                 activeSection === item.id ? "text-purple-400" : "text-gray-900"
               }`}
@@ -109,10 +110,13 @@ export default function Header() {
             <a
               key={item.id}
               href={`#${item.id}`}
+              onClick={() => {
+                setActiveSection(item.id);
+                setMobileOpen(false);
+              }}
               className={`block hover:text-purple-400 ${
                 activeSection === item.id ? "text-purple-400" : "text-gray-900"
               }`}
-              onClick={() => setMobileOpen(false)}
             >
               {item.label}
             </a>
