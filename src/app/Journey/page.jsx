@@ -1,5 +1,7 @@
 "use client"
 
+import { useState } from "react";
+
 export default function Journey() {
 
   const journey = [
@@ -54,6 +56,10 @@ export default function Journey() {
 
   ];
 
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleItems = showAll ? journey : journey.slice(0, 3);
+
   return (
     <section id="journey" className="bg-gray-100 py-16">
       <div className="max-w-5xl mx-auto px-6">
@@ -64,13 +70,12 @@ export default function Journey() {
 
         <div className="relative border-l-2 border-purple-400">
 
-          {journey.map((item, index) => (
+          {visibleItems.map((item, index) => (
             <div key={index} className="mb-10 ml-6">
 
           
               <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-purple-400 rounded-full"></span>
 
-             
               <div className="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition">
 
                 <h3 className="text-lg font-semibold text-gray-800">
@@ -95,6 +100,17 @@ export default function Journey() {
           ))}
 
         </div>
+
+        {journey.length > 3 && (
+          <div className="text-center mt-6">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="text-purple-500 font-medium hover:underline"
+            >
+              {showAll ? "See Less" : "See More"}
+            </button>
+          </div>
+        )}
 
       </div>
     </section>
