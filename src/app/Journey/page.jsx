@@ -1,7 +1,7 @@
 "use client"
 
 export default function Journey() {
-  
+
   const journey = [
     {
       title: "Web Developer Intern",
@@ -55,7 +55,7 @@ export default function Journey() {
   ];
 
   return (
-    <section id="journey" className="bg-gray-100 py-20">
+    <section id="journey" className="bg-gray-100 py-16">
       <div className="max-w-5xl mx-auto px-6">
 
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
