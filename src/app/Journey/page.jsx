@@ -74,9 +74,9 @@ export default function Journey() {
             <div key={index} className="mb-10 ml-6">
 
           
-              <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-purple-400 rounded-full"></span>
+              <span className="absolute -left-3 flex items-center justify-center w-5 h-5 bg-purple-400 rounded-full"></span>
 
-              <div className="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition">
+              <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
 
                 <h3 className="text-lg font-semibold text-gray-800">
                   {item.title}
