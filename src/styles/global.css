@@ -8,18 +8,25 @@ html {
 
 
 .swiper-pagination {
-  bottom: -10px !important; 
+  position: relative !important;
+  margin-top: 30px;
 }
 
+.swiper-button-prev,
+.swiper-button-next{
+  color: #c084fc !important;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #9333ea !important;
+}
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: #c084fc !important;
   font-size: 16px !important;
 }
 
-.swiper-button-prev:hover::after,
-.swiper-button-next:hover::after {
-  color: #9333ea !important;
+.swiper-slide-active:hover {
+  transform: scale(1.05);
 }
 
 .swiper-pagination-bullet {

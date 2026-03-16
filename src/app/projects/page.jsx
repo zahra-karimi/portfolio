@@ -72,26 +72,24 @@ export default function Projects() {
           grabCursor={true}
           centeredSlides={true}
           loop={true}
+          slidesPerView={"auto"}
           navigation={true}
           pagination={{ clickable: true }}
           modules={[EffectCoverflow, Pagination, Navigation]}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
-            depth: 120,
-            modifier: 2,
+            depth: 150,
+            modifier: 2.5,
             slideShadows: false,
-          }}
-          breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 20 },
-            640: { slidesPerView: 1.5, spaceBetween: 20 },
-            768: { slidesPerView: 2, spaceBetween: 30 },
-            1024: { slidesPerView: 3, spaceBetween: 30 },
           }}
           className="max-w-5xl mx-auto relative"
         >
           {projects.map((project, index) => (
-            <SwiperSlide key={index} className="flex justify-center">
+            <SwiperSlide
+              key={index}
+              className="!w-[320px] md:!w-[360px] flex justify-center"
+            >
               <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition w-full max-w-xs md:max-w-sm">
                 <img
                   src={project.image}
