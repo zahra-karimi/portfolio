@@ -16,8 +16,8 @@ export default function Projects() {
       description:
         "Interactive transit map showing nearby stops and routes with live data.",
       tech: ["React", "Node.js", "API"],
-      github: "https://github.com/yourusername/invoice-system",
-      live: "https://invoice-system.vercel.app",
+      github: "",
+      live: "",
     },
     {
       title: "Invoice Management System",
@@ -25,8 +25,8 @@ export default function Projects() {
       description:
         "Interactive transit map showing nearby stops and routes with live data.",
       tech: ["React", "Node.js", "API"],
-      github: "https://github.com/yourusername/invoice-system",
-      live: "https://invoice-system.vercel.app",
+      github: "",
+      live: "",
     },
     {
       title: "E-commerce Website",
@@ -34,16 +34,16 @@ export default function Projects() {
       description:
         "Interactive transit map showing nearby stops and routes with live data.",
       tech: ["React", "Node.js", "API"],
-      github: "https://github.com/yourusername/invoice-system",
-      live: "https://invoice-system.vercel.app",
+      github: "",
+      live: "",
     },
     {
       title: "Linktree Page",
       image: "/images/linktree.png",
       description: "A responsive personal link page inspired by Linktree.",
       tech: ["Next.js", "Tailwind"],
-      github: "https://github.com/yourusername/invoice-system",
-      live: "https://invoice-system.vercel.app",
+      github: "",
+      live: "",
     },
     {
       title: "Portfolio Website",
@@ -51,8 +51,8 @@ export default function Projects() {
       description:
         "Personal developer portfolio with animations and modern UI.",
       tech: ["Next.js", "Tailwind", "Framer Motion"],
-      github: "https://github.com/yourusername/invoice-system",
-      live: "https://invoice-system.vercel.app",
+      github: "",
+      live: "",
     },
   ];
 
