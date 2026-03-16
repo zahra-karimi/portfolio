@@ -1,43 +1,35 @@
 import "../styles/global.css";
-// import { Jura } from "next/font/google";
 
-
-
-// const jura = Jura({
-//   subsets: ["latin"],
-//   variable: "--font-jura",
-//   display: "swap",
-// });
 
 // export const metadata = {
 //   title: {
-//     default: "Naiara Costa - Full Stack Dev Portfolio",
-//     template: "%'s | Naiara Costa"
+//     default: "Zahra karimi - Full Stack Dev Portfolio",
+//     template: "%'s | Zahra karimi"
 //   },
 //   description: "Full stack developer with expertise in front-end. Explore my projects and get in touch for collaboration opportunities.",
 //   keywords: [
 //     "full stack developer",
 //     "portfolio",
-//     "Naiara Costa",
+//     "Zahra karimi",
 //     "Calgary",
 //     "React", "Next.js", "JavaScript", "TypeScript", "Node.js",
 //   ],
-//   authors: [{ name: 'Naiara Costa' }],
-//   creator: "Naiara Costa",
+//   authors: [{ name: 'Zahra karimi' }],
+//   creator: "Zahra karimi",
 
 //   openGraph: {
 //     type: "website",
 //     locale: "en_US",
-//     url: "https://naiaracosta.com",
-//     title: "Naiara Costa - Full Stack Developer Portfolio",
+//     url: "",
+//     title: "Zahra karimi - Full Stack Developer Portfolio",
 //     description: "Full stack developer with expertise in front-end. Explore my projects and get in touch.",
-//     siteName: "Naiara Costa Portfolio",
+//     siteName: "Zahra karimi Portfolio",
 //     images: [
 //       {
-//         url: "./og-portfolio.png",
+//         url: ",
 //         width: 1200,
 //         height: 630,
-//         alt: "Naiara Costa - Full Stack Developer Portfolio",
+//         alt: "Zahra Karimi - Full Stack Developer Portfolio",
 //         type: "image/png",
 //       },
 //     ],

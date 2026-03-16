@@ -5,3 +5,29 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+.swiper-pagination {
+  bottom: -10px !important; 
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #c084fc !important;
+  font-size: 16px !important;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+  color: #9333ea !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #c084fc !important;
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #9333ea !important;
+  opacity: 1;
+}   
