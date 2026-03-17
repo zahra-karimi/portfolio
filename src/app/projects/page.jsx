@@ -14,19 +14,19 @@ export default function Projects() {
       title: "Transit Map",
       image: "/images/transitMap.png",
       description:
-        "Interactive transit map showing nearby stops and routes with live data.",
-      tech: ["React", "Node.js", "API"],
-      github: "",
-      live: "",
+        "An interactive web app that helps users explore Calgary’s transit system with live stop and route data. Designed for ease of use, it empowers seniors and travelers with clear, intuitive navigation.",
+      tech: ["React", "Node.js", "API","Tailwind"],
+      github: "https://github.com/EvolveU-FSD/c13-project2-team4",
+      live: "https://github.com/EvolveU-FSD/c13-project2-team4",
     },
     {
       title: "Invoice Management System",
       image: "/images/invoice.png",
       description:
-        "Interactive transit map showing nearby stops and routes with live data.",
-      tech: ["React", "Node.js", "API"],
-      github: "",
-      live: "",
+        "Simplifies invoice submission and tracking with full CRUD functionality. AI-powered PDF extraction automates data entry, while the platform keeps vendors and project owners informed.",
+      tech: ["Next.js", "Node.js", "Firebase","MUI"],
+      github: "https://github.com/Collegium-software/collegium-app",
+      live: "https://app.collegiumbuilt.com/login/",
     },
     {
       title: "E-commerce Website",
