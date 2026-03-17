@@ -10,49 +10,60 @@ import "swiper/css/pagination";
 
 export default function Projects() {
   const projects = [
+      {
+      title: "Invoice Management System",
+      image: "/images/invoice.png",
+      description:
+        "Simplifies invoice submission and tracking with full CRUD functionality. AI-powered PDF extraction automates data entry, while the platform keeps vendors and project owners informed.",
+      tech: ["Next.js","Express.js", "Node.js", "Firebase","MUI"],
+      github: "https://github.com/Collegium-software/collegium-app",
+      live: "https://app.collegiumbuilt.com/login/",
+    },
+    {
+      title: "Bright Path Services",
+      image: "/images/BPS.png",
+      description:
+        "A modern WordPress website for BrightPath Services, offering digital solutions like form submissions, website creation, and branding for small businesses. Designed with a clean, user-friendly interface to showcase services effectively",
+      tech: ["WordPress", "PHP", "Elementor","HTML","CSS","JavaScript"],
+      github: "https://zahra.wsstraining.ca/",
+      live: "https://zahra.wsstraining.ca/",
+    },
+    {
+      title: "Portfolio Website",
+      image: "/images/portfolio.png",
+      description:
+        "A personal developer portfolio showcasing projects, skills, and experience. Built with modern web technologies, it features animations, responsive design, and an intuitive user interface.",
+      tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      github: "",
+      live: "",
+    } 
+    ,
     {
       title: "Transit Map",
       image: "/images/transitMap.png",
       description:
         "An interactive web app that helps users explore Calgary’s transit system with live stop and route data. Designed for ease of use, it empowers seniors and travelers with clear, intuitive navigation.",
-      tech: ["React", "Node.js", "API","Tailwind"],
+      tech: ["React","Leaflet.js / Google Maps API","Node.js", "REST API","Tailwind"],
       github: "https://github.com/EvolveU-FSD/c13-project2-team4",
       live: "https://github.com/EvolveU-FSD/c13-project2-team4",
     },
-    {
-      title: "Invoice Management System",
-      image: "/images/invoice.png",
-      description:
-        "Simplifies invoice submission and tracking with full CRUD functionality. AI-powered PDF extraction automates data entry, while the platform keeps vendors and project owners informed.",
-      tech: ["Next.js", "Node.js", "Firebase","MUI"],
-      github: "https://github.com/Collegium-software/collegium-app",
-      live: "https://app.collegiumbuilt.com/login/",
-    },
+   
     {
       title: "E-commerce Website",
       image: "/images/ecomerce.png",
       description:
-        "Interactive transit map showing nearby stops and routes with live data.",
-      tech: ["React", "Node.js", "API"],
+        "A business-to-business online platform, enabling efficient product ordering and inventory management. Designed for secure, seamless interactions between institutional clients and suppliers.",
+      tech: ["Laravel", "Javascript", "Bootstrap","Html","CSS"],
       github: "",
       live: "",
     },
     {
       title: "Linktree Page",
       image: "/images/linktree.png",
-      description: "A responsive personal link page inspired by Linktree.",
-      tech: ["Next.js", "Tailwind"],
-      github: "",
-      live: "",
-    },
-    {
-      title: "Portfolio Website",
-      image: "/images/portfolio.png",
-      description:
-        "Personal developer portfolio with animations and modern UI.",
-      tech: ["Next.js", "Tailwind", "Framer Motion"],
-      github: "",
-      live: "",
+      description: "This is my very first  responsive website design. It’s a simple Linktree-style page to showcase my portfolio and social media links.",
+      tech: ["Html", "CSS"],
+      github: "https://zahra-karimi.github.io/linktree/",
+      live: "https://zahra-karimi.github.io/linktree/",
     },
   ];
 

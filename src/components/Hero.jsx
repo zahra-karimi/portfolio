@@ -14,9 +14,9 @@ export default function Hero() {
           </h2>
 
           <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-lg">
-            I build modern, responsive web applications using technologies like
-            React, Next.js, and Node.js. I enjoy solving problems and creating
-            clean user experiences.
+          I build modern, responsive web applications using technologies like React, Next.js, Node.js, and Tailwind CSS, with a focus on clean design and seamless user experiences.
+          I enjoy solving problems and creating clean user experiences.
+
           </p>
 
           <a
