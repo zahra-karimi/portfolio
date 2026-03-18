@@ -24,43 +24,40 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="bg-white py-16">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-          Skills & Technologies
-        </h2>
+  <section id="skills" className="bg-white py-16">
+  <div className="max-w-6xl mx-auto px-6">
+    
+    <h2 className="text-3xl font-bold text-center text-brand mb-12">
+      Skills & Technologies
+    </h2>
 
-       
-        <div className="grid md:grid-cols-2 gap-6">
-          <SkillCard
-            title="Front-End Development"
-            skills={frontend}
-            gradient="from-pink-500 to-purple-500"
-            icon={<Code size={16} className="text-white" />}
-          />
+    <div className="grid md:grid-cols-2 gap-6">
+      <SkillCard
+        title="Front-End Development"
+        skills={frontend}
+        icon={<Code size={16} className="text-white" />}
+      />
 
-          <SkillCard
-            title="Back-End Development"
-            skills={backend}
-            gradient="from-purple-500 to-indigo-500"
-            icon={<Server size={16} className="text-white" />}
-          />
+      <SkillCard
+        title="Back-End Development"
+        skills={backend}
+        icon={<Server size={16} className="text-white" />}
+      />
 
-          <SkillCard
-            title="Tools & Workflow"
-            skills={tools}
-            gradient="from-indigo-500 to-blue-500"
-            icon={<Wrench size={16} className="text-white" />}
-          />
+      <SkillCard
+        title="Tools & Workflow"
+        skills={tools}
+        icon={<Wrench size={16} className="text-white" />}
+      />
 
-          <SkillCard
-            title="Professional Skills"
-            skills={soft}
-            gradient="from-purple-600 to-blue-600"
-            icon={<Brain size={16} className="text-white" />}
-          />
-        </div>
-      </div>
-    </section>
+      <SkillCard
+        title="Professional Skills"
+        skills={soft}
+        icon={<Brain size={16} className="text-white" />}
+      />
+    </div>
+
+  </div>
+</section>
   );
 }
