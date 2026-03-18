@@ -4,6 +4,9 @@ import Journey from "./journey/page";
 import Skills from "./skills/page";
 import Projects from "./projects/page";
 import About from "./about/page";
+import Contact from "./contact/page";
+import Footer from "../components/Footer";
+
 
 export default function page() {
   return (
@@ -14,6 +17,8 @@ export default function page() {
       <Journey />
       <Skills />
       <Projects />
+      <Contact />
+      <Footer/>
     </main>
   );
 }

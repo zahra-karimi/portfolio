@@ -2,9 +2,9 @@ import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function AboutMe() {
   return (
-    <section id="about">
-      <div className="max-w-5xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
+    <section id="about" className="bg-white py-6">
+      <div className="max-w-5xl mx-auto px-6 text-center mb-16">
+        <h2 className="text-4xl font-bold text-center text-brand mb-10">
           About Me
         </h2>
 
@@ -21,7 +21,7 @@ export default function AboutMe() {
           I can contribute my skills and passion for web development.
         </p>
 
-        <div className="flex justify-center items-center gap-20 mb-20">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-20">
           <div className="flex gap-4">
             {[
               {
@@ -43,7 +43,7 @@ export default function AboutMe() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-purple-500 hover:text-white transition"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-brand-soft text-brand hover:bg-brnad hover:text-white transition"
               >
                 {social.icon}
               </a>
@@ -53,7 +53,7 @@ export default function AboutMe() {
             <a
               href="/Zahra_Karimi_Resume.pdf"
               download
-              className=" inline-block px-6 py-3 bg-purple-500 text-white rounded-lg font-medium hover:bg-purple-600 transition"
+              className=" inline-block bg-brand text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-hover transition duration-300 shadow-md"
             >
               Download Resume
             </a>

@@ -54,19 +54,19 @@ export default function Header() {
     >
       <nav className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         
-        <a href="#" className="text-2xl text-purple-400">
+        <a href="#" className="text-xl text-brand">
           Z.K | Portfolio
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex gap-8">
           {navItems.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
               onClick={() => setActiveSection(item.id)}
-              className={`hover:text-purple-400 ${
-                activeSection === item.id ? "text-purple-400" : "text-gray-900"
+              className={`hover:text-brand-accent transition ${
+                activeSection === item.id ? "text-brand-accent transition" : "text-gray-900"
               }`}
             >
               {item.label}
@@ -114,8 +114,8 @@ export default function Header() {
                 setActiveSection(item.id);
                 setMobileOpen(false);
               }}
-              className={`block hover:text-purple-400 ${
-                activeSection === item.id ? "text-purple-400" : "text-gray-900"
+              className={`block hover:text-brand transition${
+                activeSection === item.id ? "text-brand transition" : "text-gray-900"
               }`}
             >
               {item.label}
