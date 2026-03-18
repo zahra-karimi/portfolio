@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 
 export default function Journey() {
-
   const journey = [
     {
       title: "Web Developer Intern",
@@ -53,36 +52,29 @@ export default function Journey() {
       description:
         "Completed high school education with a focus on mathematics and science, building the foundation that led me to pursue Computer Science.",
     },
-
   ];
 
   const [showAll, setShowAll] = useState(false);
-
   const visibleItems = showAll ? journey : journey.slice(0, 3);
 
   return (
     <section id="journey" className="bg-gray-50 py-16">
       <div className="max-w-5xl mx-auto px-6">
-
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
+        <h2 className="text-4xl font-bold text-center text-brand mb-16">
           My Journey
         </h2>
 
-        <div className="relative border-l-2 border-purple-400">
-
+        <div className="relative border-l-2 border-brand-secondary">
           {visibleItems.map((item, index) => (
             <div key={index} className="mb-10 ml-6">
+              <span className="absolute -left-2.5 flex items-center justify-center w-4 h-4 bg-brand rounded-full"></span>
 
-          
-              <span className="absolute -left-3 flex items-center justify-center w-5 h-5 bg-purple-400 rounded-full"></span>
-
-              <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
-
-                <h3 className="text-lg font-semibold text-gray-800">
+              <div className="bg-white p-5 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-gray-100">
+                <h3 className="text-lg font-semibold text-brand">
                   {item.title}
                 </h3>
 
-                <p className="text-purple-400 text-sm font-medium">
+                <p className="text-brand-accent text-sm font-medium">
                   {item.company}
                 </p>
 
@@ -90,28 +82,22 @@ export default function Journey() {
                   {item.date} • {item.location}
                 </p>
 
-                <p className="text-gray-600 text-sm">
-                  {item.description}
-                </p>
-
+                <p className="text-gray-600 text-sm">{item.description}</p>
               </div>
-
             </div>
           ))}
-
         </div>
 
         {journey.length > 3 && (
-          <div className="text-center mt-6">
+          <div className="text-center mt-10">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="text-purple-500 font-medium hover:underline"
+              className="text-brand font-medium hover:underline"
             >
               {showAll ? "See Less" : "See More"}
             </button>
           </div>
         )}
-
       </div>
     </section>
   );

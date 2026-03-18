@@ -43,21 +43,20 @@ export default function AboutMe() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-brand-soft text-brand hover:bg-brnad hover:text-white transition"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-brand hover:text-white transition"
               >
                 {social.icon}
               </a>
             ))}
           </div>
-      
-            <a
-              href="/Zahra_Karimi_Resume.pdf"
-              download
-              className=" inline-block bg-brand text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-hover transition duration-300 shadow-md"
-            >
-              Download Resume
-            </a>
-     
+
+          <a
+            href="/Zahra_Karimi_Resume.pdf"
+            download
+            className=" inline-block bg-brand text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-hover transition duration-300 shadow-md"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
     </section>
