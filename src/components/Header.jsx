@@ -4,8 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("about");
-  const [scrolled, setScrolled] = useState(false);
+
 
   // Smooth scroll section highlight
   useEffect(() => {
