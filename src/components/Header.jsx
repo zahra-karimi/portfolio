@@ -64,10 +64,7 @@ export default function Header() {
             <a
               key={item.id}
               href={`#${item.id}`}
-              onClick={() => setActiveSection(item.id)}
-              className={`hover:text-brand-accent transition ${
-                activeSection === item.id ? "text-brand-accent transition" : "text-gray-900"
-              }`}
+              className=" text-gray-900 hover:text-brand-accent transition"
             >
               {item.label}
             </a>
@@ -111,12 +108,9 @@ export default function Header() {
               key={item.id}
               href={`#${item.id}`}
               onClick={() => {
-                setActiveSection(item.id);
                 setMobileOpen(false);
               }}
-              className={`block hover:text-brand transition${
-                activeSection === item.id ? "text-brand transition" : "text-gray-900"
-              }`}
+              className="text-gray-900 block hover:text-brand-accent transition"
             >
               {item.label}
             </a>
