@@ -12,13 +12,16 @@ html {
 }
 
 .swiper-button-prev,
-.swiper-button-next{
-  color: #c084fc !important;
+.swiper-button-next {
+  color: #1B4965 !important;
+  transition: 0.3s;
 }
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: #9333ea !important;
+  color: #62B6CB !important;
 }
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 16px !important;
@@ -26,14 +29,15 @@ html {
 
 .swiper-slide-active:hover {
   transform: scale(1.05);
+  transition: 0.3s;
 }
 
 .swiper-pagination-bullet {
-  background-color: #c084fc !important;
-  opacity: 0.8;
+  background-color: #62B6CB !important;
+  opacity: 0.6;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #9333ea !important;
+  background-color: #1B4965 !important;
   opacity: 1;
-}   
+}
