@@ -4,51 +4,30 @@ import { useState, useEffect } from "react";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
 
-  // Smooth scroll section highlight
-  useEffect(() => {
-    const sections = ["about", "projects", "journey", "skills", "contact"];
-    const handleScroll = () => {
-      const scrollPos = window.scrollY + 100;
+useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 10);
+  };
 
-      // Section highlight
-      for (let sec of sections) {
-        const el = document.getElementById(sec);
-        if (el) {
-          if (
-            scrollPos >= el.offsetTop &&
-            scrollPos < el.offsetTop + el.offsetHeight
-          ) {
-            setActiveSection(sec);
-          }
-        }
-      }
-
-      // Shadow effect
-      if (window.scrollY > 10) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   const navItems = [
     { id: "about", label: "About Me" },
-    { id: "journey", label: "My Journey" },
-    { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
+    { id: "skills", label: "Skills" },
+    { id: "journey", label: "My Journey" },
     { id: "contact", label: "Contact" },
   ];
 
   return (
     <header
       className={
-        "fixed w-full py-3 px-6 top-0 left-0 z-50 bg-white section-primary shadow-md relative"
+        "sticky w-full py-3 px-6 top-0 left-0 z-50 bg-white section-primary shadow-md "
       }
     >
       <nav className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
