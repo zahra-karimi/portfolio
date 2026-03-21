@@ -32,7 +32,7 @@ useEffect(() => {
     >
       <nav className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         
-        <a href="#" className="text-xl text-brand">
+        <a href="#" className="text-xl text-brand-accent font-semibold">
           Z.K | Portfolio
         </a>
 

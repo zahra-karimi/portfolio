@@ -13,7 +13,7 @@ export default function Hero() {
             Full Stack Developer
           </h2>
 
-          <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-lg">
+          <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-lg text-justify">
           I build modern, responsive web applications using technologies like React, Next.js, Node.js, and Tailwind CSS, with a focus on clean design and seamless user experiences.
           I enjoy solving problems and creating clean user experiences.
 

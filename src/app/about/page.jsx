@@ -4,11 +4,11 @@ export default function AboutMe() {
   return (
     <section id="about" className="bg-white py-6">
       <div className="max-w-5xl mx-auto px-6 text-center mb-16">
-        <h2 className="text-4xl font-bold text-center text-brand mb-10">
+        <h2 className="text-4xl font-bold text-center text-brand mb-8">
           About Me
         </h2>
 
-        <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+        <p className="text-gray-600 mb-8 text-lg leading-relaxed text-justify">
           I’m a software engineer with a background in full-stack web
           development. My journey in computer science has empowered me to tackle
           diverse and dynamic web projects, turning innovative ideas into
