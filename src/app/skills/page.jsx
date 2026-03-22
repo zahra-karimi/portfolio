@@ -15,7 +15,7 @@ export default function Skills() {
   ];
 
   const tools = [
-    "Git","GitHub","Agile Methodologies","Pair Programming","Google Analytics"
+    "Git","GitHub","Agile Methodologies","Pair Programming","Google Analytics","Power BI","Adobe Photoshop"
   ];
 
   const soft = [

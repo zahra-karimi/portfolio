@@ -10,10 +10,9 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Invoice Management System",
+      title: "Real Estate Dashboard",
       image: "/images/invoice.png",
-      description:
-        "Simplifies invoice submission and tracking with full CRUD functionality. AI-powered PDF extraction automates data entry, while the platform keeps vendors and project owners informed.",
+      description:"Contributed to the development of a real estate data management dashboard for a startup environment, using Next.js and Material UI with reusable components in an Agile workflow, and built an AI-powered invoice management system with full CRUD functionality and automated PDF data extraction, streamlining workflows for vendors and project owners.",
       tech: ["Next.js", "Express.js", "Node.js", "Firebase", "MUI"],
       link: "https://app.collegiumbuilt.com/login/",
     },
