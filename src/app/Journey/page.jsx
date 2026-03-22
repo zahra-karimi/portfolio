@@ -4,6 +4,14 @@ import { useState } from "react";
 
 export default function Journey() {
   const journey = [
+      {
+      title: "Job Ready Employemnt Skills",
+      company: "Canadian Immigrant Women’s Association",
+      date: "Jan 2026 – Mar 2026",
+      location: "Calgary, Canada",
+      description:
+        "Gained hands-on experience in WordPress, SEO, Google Analytics, Google Ads, Power BI, and data-driven campaigns. Developed skills in creating, analyzing, and optimizing digital content for web and social media platforms.",
+    },
     {
       title: "Web Developer Intern",
       company: "Collegium",
