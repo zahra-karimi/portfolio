@@ -22,7 +22,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/Zahra_Karimi_Resume.pdf"
                 target="_blank"
                 className="px-6 py-2.5 border border-brand text-brand rounded-lg hover:bg-brand-hover hover:text-white transition text-sm"
               >
