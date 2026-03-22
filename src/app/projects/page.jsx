@@ -19,7 +19,7 @@ export default function Projects() {
     },
     {
       title: "Bright Path Services",
-      image: "/images/BPS2.png",
+      image: "/images/BPS.png",
       description:
         "A modern WordPress website for BrightPath Services, offering digital solutions like form submissions, website creation, and branding for small businesses. Designed with a clean, user-friendly interface to showcase services effectively",
       tech: ["WordPress", "PHP", "Elementor", "HTML", "CSS", "JavaScript"],
