@@ -43,7 +43,14 @@ export default function Projects() {
       ],
       link: "https://github.com/EvolveU-FSD/c13-project2-team4",
     },
-
+    {
+      title: "Linktree Page",
+      image: "/images/linktree.png",
+      description:
+        "A clean, modern an responsive linktree design to showcase my portfolio and social media links.",
+      tech: ["Html", "CSS"],
+      link: "https://zahra-karimi.github.io/linktree/",
+    },
     {
       title: "E-commerce Website",
       image: "/images/B2B.png",
@@ -51,14 +58,6 @@ export default function Projects() {
         "A business-to-business online platform, enabling efficient product ordering and inventory management. Designed for secure, seamless interactions between institutional clients and suppliers.",
       tech: ["Laravel", "Javascript", "Bootstrap", "Html", "CSS"],
       link: "https://github.com/zahra-karimi/final-project-Business-to-Business",
-    },
-    {
-      title: "Linktree Page",
-      image: "/images/linktree.png",
-      description:
-        "This is my very first responsive website design. It’s a simple Linktree-style page to showcase my portfolio and social media links.",
-      tech: ["Html", "CSS"],
-      link: "https://zahra-karimi.github.io/linktree/",
     },
   ];
 
