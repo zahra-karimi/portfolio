@@ -12,7 +12,8 @@ export default function Projects() {
     {
       title: "Real Estate Dashboard",
       image: "/images/invoice.png",
-      description:"Contributed to the development of a real estate data management dashboard for a startup environment, using Next.js and Material UI with reusable components in an Agile workflow, and built an AI-powered invoice management system with full CRUD functionality and automated PDF data extraction, streamlining workflows for vendors and project owners.",
+      description:
+        "Contributed to the development of a real estate data management dashboard for a startup environment, and built an AI-powered invoice management system with full CRUD functionality and automated PDF data extraction.",
       tech: ["Next.js", "Express.js", "Node.js", "Firebase", "MUI"],
       link: "https://app.collegiumbuilt.com/login/",
     },
@@ -38,7 +39,11 @@ export default function Projects() {
       description:
         "An interactive web app that helps users explore Calgary’s transit system with link stop and route data. Designed for ease of use, it empowers seniors and travelers with clear, intuitive navigation.",
       tech: [
-        "React", "Leaflet.js / Google Maps API","Node.js","REST API", "Tailwind",
+        "React",
+        "Leaflet.js / Google Maps API",
+        "Node.js",
+        "REST API",
+        "Tailwind",
       ],
       link: "https://github.com/EvolveU-FSD/c13-project2-team4",
     },
@@ -109,11 +114,9 @@ export default function Projects() {
         <div className="relative">
           <div className="overflow-hidden rounded-2xl">
             <div
-              className="flex transition-transform duration-500"
+              className="flex transition-transform duration-500 ease-in-out"
               style={{
-                transform: `translateX(-${
-                  currentIndex * (100 / slidesToShow)
-                }%)`,
+                transform: `translateX(-${currentIndex * (100 / slidesToShow)}%)`,
               }}
             >
               {projects.map((project, index) => (
@@ -121,21 +124,20 @@ export default function Projects() {
                   key={index}
                   className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3"
                 >
-                  <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden border border-gray-100 w-full">
-                    <div className="relative group">
-                      <div className="w-full h-64 flex items-center justify-center">
-                        <img
-                          src={project.image}
-                          alt={project.title}
-                          className="max-h-full max-w-full object-contain"
-                        />
-                      </div>
+                  <div className="group bg-white rounded-xl shadow-lg hover:shadow-md transition-all duration-300 transform hover:-translate-y-2 overflow-hidden h-[500px] flex flex-col my-4">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
 
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <a
                           href={project.link}
                           target="_blank"
-                          className="flex items-center gap-2 px-5 py-2 bg-white text-brand rounded-lg text-sm font-medium hover:bg-gray-100 transition"
+                          className="bg-white/90 dark:bg-black/90 backdrop-blur-sm text-gray-900 dark:text-white px-6 py-3 rounded-full font-semibold hover:bg-white dark:hover:bg-black transition-colors duration-200 flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0"
                         >
                           <FaExternalLinkAlt size={12} />
                           View Project
