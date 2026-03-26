@@ -49,7 +49,7 @@ export default function Projects() {
     },
     {
       title: "Linktree Page",
-      image: "/images/linktree.png",
+      image: "/images/Linktree.png",
       description:
         "A clean, modern an responsive linktree design to showcase my portfolio and social media links.",
       tech: ["Html", "CSS"],
