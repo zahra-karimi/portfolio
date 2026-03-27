@@ -29,7 +29,7 @@ export default function Hero() {
 
         <div className="flex justify-center md:justify-end">
           <img
-            src="/images/zahraPhoto.jpeg"
+            src="/images/ZahraPhoto.png"
             alt="Zahra Karimi"
             className="w-[320px] md:w-[380px] h-auto shadow-lg rounded-xl object-cover border-gray-100"
           />
