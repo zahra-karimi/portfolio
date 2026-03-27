@@ -27,7 +27,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://zahra-karimi.github.io/portfolio",
+    url: "https://zahra-karimi-portfolio.vercel.app/",
     title: "Zahra Karimi - Full Stack Developer Portfolio",
     description: "Full stack developer specializing in React, Next.js, and TypeScript. Explore my projects and get in touch for collaboration opportunities.",
     siteName: "Zahra Karimi Portfolio",
