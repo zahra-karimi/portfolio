@@ -31,7 +31,7 @@ export default function Projects() {
       description:
         "A personal developer portfolio showcasing projects, skills, and experience. Built with modern web technologies, it features animations, responsive design, and an intuitive user interface.",
       tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      link: "https://github.com/zahra-karimi/portfolio",
+      link: "https://zahra-karimi-portfolio.vercel.app/",
     },
     {
       title: "Transit Map",
@@ -46,22 +46,24 @@ export default function Projects() {
         "Tailwind",
       ],
       link: "https://github.com/EvolveU-FSD/c13-project2-team4",
+      disabled: true,
     },
     {
       title: "Linktree Page",
       image: "/images/Linktree.png",
       description:
-        "A clean, modern an responsive linktree design to showcase my portfolio and social media links.",
+        "A clean, modern and responsive linktree design to showcase my portfolio and social media links.",
       tech: ["Html", "CSS"],
       link: "https://zahra-karimi.github.io/linktree/",
     },
     {
       title: "E-commerce Website",
-      image: "/images/B2B.png",
+      image: "/images/B2B.PNG",
       description:
         "A business-to-business online platform, enabling efficient product ordering and inventory management. Designed for secure, seamless interactions between institutional clients and suppliers.",
       tech: ["Laravel", "Javascript", "Bootstrap", "Html", "CSS"],
       link: "https://github.com/zahra-karimi/final-project-Business-to-Business",
+      disabled: true,
     },
   ];
 
@@ -133,16 +135,18 @@ export default function Projects() {
                       />
 
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          className="bg-white/90 dark:bg-black/90 backdrop-blur-sm text-gray-900 dark:text-white px-6 py-3 rounded-full font-semibold hover:bg-white dark:hover:bg-black transition-colors duration-200 flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0"
-                        >
-                          <FaExternalLinkAlt size={12} />
-                          View Project
-                        </a>
-                      </div>
+                      {!project.disabled && (
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            className="bg-white/90 dark:bg-black/90 backdrop-blur-sm text-gray-900 dark:text-white px-6 py-3 rounded-full font-semibold hover:bg-white dark:hover:bg-black transition-colors duration-200 flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0"
+                          >
+                            <FaExternalLinkAlt size={12} />
+                            View Project
+                          </a>
+                        </div>
+                      )}
                     </div>
 
                     <div className="p-6">
