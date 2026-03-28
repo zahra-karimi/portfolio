@@ -58,7 +58,7 @@ export default function Projects() {
     },
     {
       title: "E-commerce Website",
-      image: "/images/B2B.PNG",
+      image: "/images/B2B.png",
       description:
         "A business-to-business online platform, enabling efficient product ordering and inventory management. Designed for secure, seamless interactions between institutional clients and suppliers.",
       tech: ["Laravel", "Javascript", "Bootstrap", "Html", "CSS"],
