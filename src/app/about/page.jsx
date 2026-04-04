@@ -51,7 +51,7 @@ export default function AboutMe() {
           </div>
 
           <a
-            href="/Zahra_Karimi_Resume.pdf"
+            href="/Zahra_karimi_Resume.pdf"
             download
             className=" inline-block bg-brand text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-hover transition duration-300 shadow-md"
           >
